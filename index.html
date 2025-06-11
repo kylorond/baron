@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teka Teki Silang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="p-4 md:p-6 flex flex-col items-center justify-center min-h-screen">
+
+    <div id="background-graphics">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+    </div>
+
+    <div class="w-full max-w-xl main-container p-6 md:p-8 relative z-10">
+        <header class="mb-6 text-center">
+            <h1 class="text-4xl md:text-5xl header-title">Teka Teki Silang</h1>
+            <p class="text-slate-600 mt-1">Sederhana</p>
+        </header>
+
+        <div id="message-area" class="mb-4 text-center font-semibold text-lg min-h-[28px]"></div>
+        <div id="modal-container"></div>
+
+        <div class="flex flex-col items-center gap-4">
+            <div id="active-clue-display" class="active-clue-display w-full">Klik sebuah kotak untuk melihat pertanyaan.</div>
+            <div class="grid-wrapper">
+                <div id="grid-container" class="grid-container"></div>
+            </div>
+
+            <div class="w-full">
+                <div class="tab-nav">
+                    <button class="tab-button active" data-tab="across">Mendatar</button>
+                    <button class="tab-button" data-tab="down">Menurun</button>
+                </div>
+                <div id="clue-panel-across" class="clue-panel active">
+                    <div id="across-clues" class="space-y-1.5 clue-container"></div>
+                </div>
+                <div id="clue-panel-down" class="clue-panel">
+                    <div id="down-clues" class="space-y-1.5 clue-container"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
+            <button id="check-button" class="action-button w-full sm:w-auto">
+                <i class="fas fa-check-double"></i> Cek
+            </button>
+            <button id="reveal-letter-button" class="action-button w-full sm:w-auto">
+                <i class="fas fa-search"></i> <span id="reveal-chances-count">Bantuan (5)</span>
+            </button>
+            <button id="new-puzzle-button" class="action-button w-full sm:w-auto">
+                <i class="fas fa-shuffle"></i> Baru
+            </button>
+        </div>
+         
+         <footer class="footer">
+            <p>Dibuat oleh <a href="https://instagram.com/baronnnd_" target="_blank" rel="noopener noreferrer">Baron</a></p>
+         </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
