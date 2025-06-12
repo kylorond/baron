@@ -3,24 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teka Teki Silang</title>
+    <title>Teka Teki Silang - by Baron</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="p-4 md:p-6 flex flex-col items-center justify-center min-h-screen">
 
-    <div id="background-graphics">
-        <div class="blob blob1"></div>
-        <div class="blob blob2"></div>
-    </div>
+    <div id="background-graphics"></div>
 
-    <div class="w-full max-w-xl main-container p-6 md:p-8 relative z-10">
-        <header class="mb-6 text-center">
-            <h1 class="text-4xl md:text-5xl header-title">Teka Teki Silang</h1>
+    <div class="w-full max-w-lg main-container p-4 md:p-6 relative z-10">
+        <header class="mb-4 text-center">
+            <h1 class="text-3xl sm:text-4xl header-title">Teka Teki Silang</h1>
         </header>
 
-        <div id="message-area" class="mb-4 text-center font-semibold text-lg min-h-[28px]"></div>
+        <div id="message-area" class="mb-2 text-center font-semibold text-base min-h-[24px]"></div>
         <div id="modal-container"></div>
 
         <div class="flex flex-col items-center gap-4">
@@ -35,15 +32,15 @@
                     <button class="tab-button" data-tab="down">Menurun</button>
                 </div>
                 <div id="clue-panel-across" class="clue-panel active">
-                    <div id="across-clues" class="space-y-1.5 clue-container"></div>
+                    <div id="across-clues" class="space-y-1 clue-container"></div>
                 </div>
                 <div id="clue-panel-down" class="clue-panel">
-                    <div id="down-clues" class="space-y-1.5 clue-container"></div>
+                    <div id="down-clues" class="space-y-1 clue-container"></div>
                 </div>
             </div>
         </div>
 
-        <div class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
+        <div class="mt-6 flex flex-col sm:flex-row justify-center items-center gap-3">
             <button id="check-button" class="action-button w-full sm:w-auto">
                 <i class="fas fa-check-double"></i> Cek
             </button>
